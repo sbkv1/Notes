@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://samirpaul1.github.io/MakeNotes/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐌𝐚𝐤𝐞 𝐍𝐨𝐭𝐞𝐬 ~ 𝓢𝓪𝓶𝓲𝓻 𝓟𝓪𝓾𝓵</title>
+    <link rel="shortcut icon" href="https://samirpaul1.github.io/MakeNotes/favicon.ico">
+    
+    <link href="./𝐌𝐚𝐤𝐞 𝐍𝐨𝐭𝐞𝐬 _ 𝓢𝓪𝓶𝓲𝓻 𝓟𝓪𝓾𝓵_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://samirpaul1.github.io/MakeNotes/">𝐓𝐚𝐤𝐞 𝐍𝐨𝐭𝐞𝐬</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://github.com/SamirPaul1/MakeNotes">Contribute 💻</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" id="searchTxt" type="search" placeholder="🔍 𝙎𝙚𝙖𝙧𝙘𝙝 𝙉𝙤𝙩𝙚𝙨" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">  𝙎𝙚𝙖𝙧𝙘𝙝  </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!---adding editable div-->
+   <!--- <div class="container3 " id="contain3" border:2px solid black>
+        <div id="edittext">hello! click here to edit</div>
+    </div>-->
+    <div class="container my-3 ">
+        <h1>𝓜𝓪𝓴𝓮 𝓢𝓸𝓶𝓮 𝓝𝓸𝓽𝓮𝓼 </h1>
+        <div class="card text-dark bg-light mb-3">
+
+            <div class="card-body">
+                <h5 class="card-title">ℕ𝕠𝕥𝕖</h5>
+                <div class="form-group">
+                    <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                    <input type="text" class="form-control" id="addText" placeholder="Write your note here ... ">
+                </div>
+                <br>
+                <button id="addBtn" class="btn btn-primary">+𝘼𝙙𝙙 𝙉𝙤𝙩𝙚</button>
+            </div>
+        </div>
+        <h3>Your Notes</h3>
+        <hr>
+        
+        <div id="notes" class="row container-fluid">
+        <div class="notecard  mx-2 my-2 card" style="width: 21rem; background: rgb(123, 255, 0); color: black;">
+
+                <div class="card-body markclass">
+                    <h5 class="card-title">Note 1</h5>
+                    <p class="card-text">https://youtu.be/MjwaP18s0Xs?list=PLdo5W4Nhv31b33kF46f9aFjoJPOkdlsRc&amp;t=458</p>
+                    
+                    <button id="0" onclick="deletenotes(this.id)" class="btn btn-primary">𝘿𝙚𝙡𝙚𝙩𝙚 𝙉𝙤𝙩𝙚</button>
+                   <button id="ugt" onclick="markugt(0)" class="btn btn-success  my-3">𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩</button>
+                </div>
+            </div>
+        
+        <div class="notecard  mx-2 my-2 card" style="width: 21rem; background: white; color: black;">
+
+                <div class="card-body markclass">
+                    <h5 class="card-title">Note 2</h5>
+                    <p class="card-text">https://docs.google.com/document/d/1yFCYEA9GUtdl44vvfAuAz_FZoPub8yyLq7aFlujgKCw/edit#</p>
+                    
+                    <button id="1" onclick="deletenotes(this.id)" class="btn btn-primary">𝘿𝙚𝙡𝙚𝙩𝙚 𝙉𝙤𝙩𝙚</button>
+                   <button id="ugt" onclick="markugt(1)" class="btn btn-danger  my-3">𝙉𝙤𝙩 𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩</button>
+                </div>
+            </div>
+        
+        <div class="notecard  mx-2 my-2 card" style="width: 21rem; background: rgb(123, 255, 0); color: black;">
+
+                <div class="card-body markclass">
+                    <h5 class="card-title">Note 3</h5>
+                    <p class="card-text">https://www.youtube.com/watch?v=qgizvmgeyUM</p>
+                    
+                    <button id="2" onclick="deletenotes(this.id)" class="btn btn-primary">𝘿𝙚𝙡𝙚𝙩𝙚 𝙉𝙤𝙩𝙚</button>
+                   <button id="ugt" onclick="markugt(2)" class="btn btn-success  my-3">𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩</button>
+                </div>
+            </div>
+        
+        <div class="notecard  mx-2 my-2 card" style="width: 21rem; background: white; color: black;">
+
+                <div class="card-body markclass">
+                    <h5 class="card-title">Note 4</h5>
+                    <p class="card-text">https://www.youtube.com/watch?v=NTop3VTjmxk</p>
+                    
+                    <button id="3" onclick="deletenotes(this.id)" class="btn btn-primary">𝘿𝙚𝙡𝙚𝙩𝙚 𝙉𝙤𝙩𝙚</button>
+                   <button id="ugt" onclick="markugt(3)" class="btn btn-danger  my-3">𝙉𝙤𝙩 𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩</button>
+                </div>
+            </div>
+        
+        <div class="notecard  mx-2 my-2 card" style="width: 21rem; background: white; color: black;">
+
+                <div class="card-body markclass">
+                    <h5 class="card-title">Note 5</h5>
+                    <p class="card-text">https://www.youtube.com/watch?v=qQkfUKer3LU&amp;list=PLEJXowNB4kPyP2PdMhOUlTY6GrRIITx28&amp;index=3</p>
+                    
+                    <button id="4" onclick="deletenotes(this.id)" class="btn btn-primary">𝘿𝙚𝙡𝙚𝙩𝙚 𝙉𝙤𝙩𝙚</button>
+                   <button id="ugt" onclick="markugt(4)" class="btn btn-danger  my-3">𝙉𝙤𝙩 𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩</button>
+                </div>
+            </div>
+        
+        <div class="notecard  mx-2 my-2 card" style="width: 21rem; background: rgb(123, 255, 0); color: black;">
+
+                <div class="card-body markclass">
+                    <h5 class="card-title">Note 6</h5>
+                    <p class="card-text">https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/</p>
+                    
+                    <button id="5" onclick="deletenotes(this.id)" class="btn btn-primary">𝘿𝙚𝙡𝙚𝙩𝙚 𝙉𝙤𝙩𝙚</button>
+                   <button id="ugt" onclick="markugt(5)" class="btn btn-success  my-3">𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩</button>
+                </div>
+            </div>
+        
+        <div class="notecard  mx-2 my-2 card" style="width: 21rem; background: rgb(123, 255, 0); color: black;">
+
+                <div class="card-body markclass">
+                    <h5 class="card-title">Note 7</h5>
+                    <p class="card-text">https://leetcode.com/problems/balance-a-binary-search-tree/</p>
+                    
+                    <button id="6" onclick="deletenotes(this.id)" class="btn btn-primary">𝘿𝙚𝙡𝙚𝙩𝙚 𝙉𝙤𝙩𝙚</button>
+                   <button id="ugt" onclick="markugt(6)" class="btn btn-success  my-3">𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩</button>
+                </div>
+            </div>
+        
+        <div class="notecard  mx-2 my-2 card" style="width: 21rem; background: rgb(123, 255, 0); color: black;">
+
+                <div class="card-body markclass">
+                    <h5 class="card-title">Note 8</h5>
+                    <p class="card-text">https://leetcode.com/problems/balance-a-binary-search-tree/</p>
+                    
+                    <button id="7" onclick="deletenotes(this.id)" class="btn btn-primary">𝘿𝙚𝙡𝙚𝙩𝙚 𝙉𝙤𝙩𝙚</button>
+                   <button id="ugt" onclick="markugt(7)" class="btn btn-success  my-3">𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./𝐌𝐚𝐤𝐞 𝐍𝐨𝐭𝐞𝐬 _ 𝓢𝓪𝓶𝓲𝓻 𝓟𝓪𝓾𝓵_files/bootstrap.bundle.min.js.download" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="./𝐌𝐚𝐤𝐞 𝐍𝐨𝐭𝐞𝐬 _ 𝓢𝓪𝓶𝓲𝓻 𝓟𝓪𝓾𝓵_files/popper.min.js.download" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="./𝐌𝐚𝐤𝐞 𝐍𝐨𝐭𝐞𝐬 _ 𝓢𝓪𝓶𝓲𝓻 𝓟𝓪𝓾𝓵_files/bootstrap.min.js.download" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+            <script src="./𝐌𝐚𝐤𝐞 𝐍𝐨𝐭𝐞𝐬 _ 𝓢𝓪𝓶𝓲𝓻 𝓟𝓪𝓾𝓵_files/app.js.download"></script>
+
+
+
+
+
+
+
+</div></body></html>
